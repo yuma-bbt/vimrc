@@ -22,6 +22,7 @@ if &compatible
   call dein#add('Shougo/neomru.vim')
   call dein#add('Shougo/neosnippet')
   call dein#add('scrooloose/nerdtree')
+  call dein#add('rhysd/accelerated-jk')
 
 
 
@@ -135,3 +136,5 @@ au BufRead,BufNewFile *.md set filetype=markdown
 map <C-\> :set paste<CR> 
 map <C-^> :set nopaste<CR> 
 nnoremap <silent> <C-@> :PrevimOpen<CR> " Ctrl-pでプレビュー
+nmap j <Plug>(accelerated_jk_gj)
+nmap k <Plug>(accelerated_jk_gk)
